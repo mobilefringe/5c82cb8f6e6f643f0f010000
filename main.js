@@ -93,7 +93,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         href: "#",
                         sub_menu: [
                             {
-                                name: "Directory",
+                                name: "Hello",
                                 href: "/stores"
                             },
                             {
