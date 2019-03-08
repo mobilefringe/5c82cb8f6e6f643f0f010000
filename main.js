@@ -88,12 +88,12 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                 breadcrumb: this.$breadcrumbs,
                 menu_items: [
                     {
-                        name: "Hello",
+                        name: "Directory",
                         id: "menu1",
                         href: "#",
                         sub_menu: [
                             {
-                                name: "Hello",
+                                name: "Directory",
                                 href: "/stores"
                             },
                             {
