@@ -3,8 +3,10 @@
 
 /* *** COLOURS *** */
 $primary: #e6cf6a;
-$secondary: #e8d225;
+// $secondary: #e8d225;
+$secondary: #000000;
 $text: #000;
+
 
 /* *** GENERAL STYLES *** */
 html { 
