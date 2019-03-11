@@ -26,7 +26,7 @@
     						        <span v-if="item.sub_menu != undefined">{{ item.name }}</span>
     						        <ul v-if="item.sub_menu">
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
-    						                <router-link :to="sub_menu.href" :lala="target">{{ sub_menu.name }}</router-link>
+    						                <router-link :to="sub_menu.href" :="target">{{ sub_menu.name }}</router-link>
     						            </li>
     								</ul>
     						    </li>
@@ -109,6 +109,8 @@
                     window.addEventListener('resize', this.getWindowWidth);
                     this.getWindowWidth();
                 });
+                var_temp_repo = this.findRepoByName('Donation');
+                console.log(temp_repo);
             },
             mounted() {
                 this.$nextTick(function() {
@@ -124,6 +126,7 @@
                     'timezone',
                     'hours',
                     'getTodayHours',
+                    'findRepoByName'
                 ]),
                 locale: {
                     get () {
