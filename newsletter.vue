@@ -16,11 +16,11 @@
                             <form class="newsletter_form form-horizontal" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AC4EEF36C8D08466CADCB875419D65CEE23544D651E18592A13D5689FCCE1F96B092F58A328BA587AFAB3BEDAC04EE25B" method="post" @submit.prevent="validateBeforeSubmit">
                                 <div class="row">
                                     <div class="col-sm-6" >
-                                        <label for="fieldfihudt" class="accessibility">First Name</label>
+                                        <label for="fieldglrtiu" class="accessibility">First Name</label>
                                         <input v-model="form_data.first_name" required class="margin_20 form-control" id="fieldglrtiu" name="cm-f-glrtiu" type="text" placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6" >
-                                        <label for="fieldfihudi" class="accessibility">Last Name</label>
+                                        <label for="fieldglrtdl" class="accessibility">Last Name</label>
                                         <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldglrtdl" name="cm-f-glrtdl" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
