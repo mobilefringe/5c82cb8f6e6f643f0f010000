@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="row" v-if="main">
-                        <div class="col-md-12" v-bind:style="{ color: "$primary"}">
+                        <div class="col-md-12">
                             <div  v-html="main.body"></div>
                         </div>
                     </div>
