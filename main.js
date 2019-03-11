@@ -101,8 +101,8 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                                 href: "/map"
                             },
                             {
-                                name: "Dining",
-                                href: "/stores?category=dining_full_service"
+                                name: "Dine",
+                                href: "/dine"
                             }
                         ]
                     },
