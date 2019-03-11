@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 links">
                             <div v-if="main" v-html="main.body"></div>
                         </div>
                     </div>
