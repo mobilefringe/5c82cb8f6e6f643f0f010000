@@ -109,6 +109,7 @@
                     window.addEventListener('resize', this.getWindowWidth);
                     this.getWindowWidth();
                 });
+                this,loadData().then(response => {)
                 var temp_repo = this.findRepoByName('Donation');
                 console.log(temp_repo);
                 if(temp_repo != null && temp_repo != undefined) {
@@ -116,6 +117,8 @@
                 } else {
                     return null
                 }
+                this.dataloaded = true;
+                });
             },
             mounted() {
                 this.$nextTick(function() {
