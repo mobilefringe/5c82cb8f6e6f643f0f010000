@@ -100,6 +100,7 @@
             created() {
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Newsletter Banner');
+                    console.log(temp_repo)
                     if(temp_repo != null && temp_repo != undefined) {
                         this.pageBanner = temp_repo.images[0];
                     } else {
