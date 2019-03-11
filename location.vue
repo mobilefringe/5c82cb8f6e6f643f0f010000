@@ -14,13 +14,6 @@
                             <breadcrumb></breadcrumb>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div>
-                                <p>It’s easy to get to Cerritos Towne Center, and even easier to make it your favorite destination in Cerritos.  Conveniently located right off the 91 freeway with public transit access and bountiful parking. </p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row" v-if="main">
                         <div class="col-md-12">
                             <div  v-html="main.body"></div>
