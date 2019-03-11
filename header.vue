@@ -28,9 +28,6 @@
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
     						                <router-link :to="sub_menu.href">{{ sub_menu.name }}</router-link>
     						            </li>
-    						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
-    						                <router-link :to="sub_menu.url">{{ sub_menu.name }}</router-link>
-    						            </li>
     								</ul>
     						    </li>
     						</ul>
