@@ -61,7 +61,6 @@
             },
             created() {
                 this.loadData().then(response => {
-                    console.log(response)
                     var repo = this.findRepoByName('Location Banner');
                     if(repo !== null && repo !== undefined) {
                        repo = repo.images;
