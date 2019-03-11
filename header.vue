@@ -111,6 +111,11 @@
                 });
                 var_temp_repo = this.findRepoByName('Donation');
                 console.log(temp_repo);
+                if(temp_repo != null && temp_repo != undefined) {
+                    this.pageBanner = temp_repo.images[0];
+                } else {
+                    return null
+                }
             },
             mounted() {
                 this.$nextTick(function() {
