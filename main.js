@@ -139,6 +139,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                                 name: "Newsletter Sign Up",
                                 href: "/newsletter"
                             }
+                            {
+                                name: "Non-Profit Donation Request Form",
+                                href: "https://codecloud.cdn.speedyrails.net/sites/5b5e82b96e6f644fb8e40000/application/pdf/1520876234000/The%20Landing%20at%20Renton%20Non-Profit%20Donation%20Form%20(2).pdf"
+                            }
                         ]
                     }
                 ],
