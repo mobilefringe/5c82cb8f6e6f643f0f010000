@@ -120,6 +120,7 @@
                         category_id = "All";
                     } else {
                         category_id = this.findCategoryByName(category_id).id;
+                        console.log(category_id)
                     }
                     if (category_id == "All") {
                         this.filteredStores = this.allStores;
