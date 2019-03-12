@@ -115,7 +115,7 @@
                 },
                 filterByCategory() {
                     category_id = this.selectedCat;
-                    console.log(catergory_id)
+                    console.log(category_id);
                     if (category_id == "All" || category_id == null || category_id == undefined) {
                         category_id = "All";
                     } else {
