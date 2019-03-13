@@ -264,6 +264,11 @@
 
                     return feature_items
                 }
+                instagram() {
+                    if (social_feed.length === 0 ) {
+                        return null
+                    }
+                }
             },
             methods: {
                 loadData: async function() {
