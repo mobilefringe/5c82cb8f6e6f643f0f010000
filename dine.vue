@@ -189,7 +189,7 @@
                     console.log(dining_cat)
                     var subcategories = [];
                     if (dining_cat !== null && dining_cat !== undefined) {
-                       subcategories = vm.findSubcategoriesByParentID(dining_cat.id);
+                       subcategories = vm.findSubcategoriesByParentID(dining_cat.subcategories_id);
                     }
                     
                     subcategories = _.map(subcategories, 'name').sort();
