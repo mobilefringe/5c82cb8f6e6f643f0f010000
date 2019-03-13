@@ -3,7 +3,7 @@
         <section id="footer">
             <div class="newsletter_signup">
                 <div class="row main_container">
-                    <div class="col-md-12 center-block">
+                    <div class="col-md-12 center-block" id="newsletter_margin">
                         <span>Sign up to receive the latest deals and news!</span>
                         <label for="userName" class="accessibility">Enter Name</label>
                         <input id="userName" v-model="newsletter_name" type="text" placeholder="Name*" class="newsletter_control" required />
@@ -34,7 +34,7 @@
             </div>
             <div class="copyright">
                 <div class="row main_container">
-                    <div class="col-md-12" id="footer_margin">
+                    <div class="col-md-12">
                         <p class="footer_text">&#169; {{copyright_year}} <a :href="siteInfo.propertyManagementURL" target="_blank">{{ siteInfo.propertyManagementName }}</a>. All rights reserved. | Powered by <a href="https://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
                     </div>
                 </div>
