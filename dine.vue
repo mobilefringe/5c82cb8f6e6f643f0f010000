@@ -192,10 +192,8 @@
                        subcategories = vm.findSubcategoriesByParentID(dining_cat.id);
                        console.log(subcategories, 'hello')
                     }
-                    console.log(subcategories)
                     subcategories = _.map(subcategories, 'name').sort();
                     subcategories.unshift('All Cuisine');
-                    console.log(subcategories)
                     return subcategories;
                 },
                 filterByCategory() {
