@@ -42,7 +42,7 @@
             					    :on-change="filterByCategory" 
             					    class="category-select" 
             					    placeholder="Category" 
-            					    id="selectByCat"
+            					    :id="selectByCat"
             				    ></v-select>
             				</div>
         		        </div>
