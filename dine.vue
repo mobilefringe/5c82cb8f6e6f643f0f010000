@@ -191,7 +191,6 @@
                     if (dining_cat !== null && dining_cat !== undefined) {
                        subcategories = vm.findSubcategoriesByParentID(dining_cat.subcategories_id);
                     }
-                    console.log(subcategories)
                     subcategories = _.map(subcategories, 'name').sort();
                     // subcategories.unshift('All Cuisine');
                     console.log(subcategories)
