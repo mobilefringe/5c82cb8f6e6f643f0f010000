@@ -38,7 +38,6 @@
             },
             created() {
                 this.updateCurrentPage(this.id);
-                this.loadData().then(response => {
                     var repo = this.findRepoByName('Privacy Banner');
                     if(repo !== null && repo !== undefined) {
                        repo = repo.images;
