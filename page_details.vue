@@ -38,7 +38,6 @@
             },
             created() {
                 this.updateCurrentPage(this.id);
-                console.log(this.id)
             },
             watch: {
                 $route: function () {
