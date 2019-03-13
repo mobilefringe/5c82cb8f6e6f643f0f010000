@@ -224,7 +224,6 @@
                 loadData: async function() {
                     try {
                         let results = await Promise.all([this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos"), this.$store.dispatch("getData", "subcategories")]);
-                        console.log(results)
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
