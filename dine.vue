@@ -180,20 +180,18 @@
                         }
                     });
                     this.filteredStores = store_list;
-                    // console.log(store_list)
                     return store_list
                 },
                 dropDownCats() {
                     var vm = this;
                     var dining_cat =  _.find(this.processedCategories, function(o) { return o.name == "Dining"});
-                    console.log(dining_cat)
                     var subcategories = [];
                     if (dining_cat !== null && dining_cat !== undefined) {
-                       subcategories = vm.findSubcategoriesByParentID(dining_cat.subcategories_id);
+                       subcategories = vm.findSubcategoriesByParentID(dining_cat.id);
                     }
+                    
                     subcategories = _.map(subcategories, 'name').sort();
-                    // subcategories.unshift('All Cuisine');
-                    console.log(subcategories)
+                    subcategories.unshift('All Cuisine');
                     return subcategories;
                 },
                 filterByCategory() {
