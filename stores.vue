@@ -132,7 +132,7 @@
                     }
                     else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71eb886e6f6450013c0000/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": "https://www.mallmaverick.com/system/site_images/photos/000/050/006/original/landing_default_banner.png?1552582181"
                         }
                     }
                     
