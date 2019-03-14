@@ -163,7 +163,7 @@
                     }
                     else {
                         this.pageBanner = {
-                            "image_url": "https://www.mallmaverick.com/system/site_images/photos/000/050/006/original/landing_default_banner.png?1552582181"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c82cb8f6e6f643f0f010000/image/png/1552582149966/landing_default_banner.png"
                         }
                     }
                     
@@ -255,7 +255,7 @@
                             var current_promo = vm.findPromoById(value);
                             
                             if (_.includes(current_promo.image_url, 'missing')) {
-                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1529532181000/promoplaceholder2@2x.png";
+                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5c82cb8f6e6f643f0f010000/image/png/1552583012044/landing_placeholder.png";
                             }
     
                             temp_promo.push(current_promo);
@@ -268,7 +268,7 @@
                             var current_event = vm.findEventById(value);
                             
                             if (_.includes(current_event.image_url, 'missing')) {
-                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5c82cb8f6e6f643f0f010000/image/png/1552583012044/landing_placeholder.png";
                             }
     
                             temp_event.push(current_event);
