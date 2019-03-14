@@ -25,7 +25,7 @@
                                     </div>    
                                 </div>
                                 <div id="store_dets_logo_container" v-else>
-                                    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="Current Store>
+                                    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="Current Store">
                     			    <img  class="store_details_image" :src="currentStore.store_front_url_abs" alt="Current Store">
                                 </div>
                                 <div class="margin_20 center" v-if="currentStore.phone">
@@ -206,7 +206,7 @@
                     floor_1.id = "first-floor";
                     floor_1.title = "Level One";
                     floor_1.map = this.getPNGurl;
-                    floor_1.z_index = 1;
+                    floor_1.z_index = null;
                     floor_1.show = true;
                     floor_list.push(floor_1);
                     return floor_list;
