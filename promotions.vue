@@ -79,7 +79,7 @@
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b5f2c136e6f644fcb5b0100/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": "https://www.mallmaverick.com/system/site_images/photos/000/050/006/original/landing_default_banner.png?1552582181"
                         }
                     }
                     this.handleButton();
