@@ -71,7 +71,7 @@
                     }
                     else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71eb886e6f6450013c0000/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c82cb8f6e6f643f0f010000/image/png/1552582149966/landing_default_banner.png"
                         }
                     }
                     var temp_repo = this.findRepoByName('Center Information Images');
