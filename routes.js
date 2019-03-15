@@ -30,45 +30,45 @@ define([], function () {
                         }
                     ]
                 },
-                {
-                    path: '/coupons',
-                    component: view('default'),
-                    meta: {
-                        breadcrumb: 'Coupons',
-                    },
-                    children: [
-                        {
-                            path: '',
-                            component: view('coupons'),
+                // {
+                //     path: '/coupons',
+                //     component: view('default'),
+                //     meta: {
+                //         breadcrumb: 'Coupons',
+                //     },
+                //     children: [
+                //         {
+                //             path: '',
+                //             component: view('coupons'),
                             
-                            name: 'coupons'
-                        },
-                        {
-                            path: '/coupons/my-basket',
-                            component: view('default'),
-                            children: [
-                                {
-                                    path: '',
-                                    component: view('coupon_basket'),
-                                    meta: {
-                                        breadcrumb: 'My Basket',
-                                    },
-                                    name: 'couponBasket',
-                                    props: true
-                                }
-                            ]
-                        },
-                        {
-                            path: ':id',
-                            component: view('coupons_details'),
-                            meta: {
-                                breadcrumb: 'Coupon Details',
-                            },
-                            name: 'couponDetails',
-                            props: true
-                        }
-                    ]
-                },
+                //             name: 'coupons'
+                //         },
+                //         {
+                //             path: '/coupons/my-basket',
+                //             component: view('default'),
+                //             children: [
+                //                 {
+                //                     path: '',
+                //                     component: view('coupon_basket'),
+                //                     meta: {
+                //                         breadcrumb: 'My Basket',
+                //                     },
+                //                     name: 'couponBasket',
+                //                     props: true
+                //                 }
+                //             ]
+                //         },
+                //         {
+                //             path: ':id',
+                //             component: view('coupons_details'),
+                //             meta: {
+                //                 breadcrumb: 'Coupon Details',
+                //             },
+                //             name: 'couponDetails',
+                //             props: true
+                //         }
+                //     ]
+                // },
                 {
                     path: '/leasing',
                     component: view('default'),
@@ -83,7 +83,9 @@ define([], function () {
                         }
                     ]
                 },
-                {
+            ]
+        },
+        {
                     path: '/newsletter',
                     component: view('default'),
                     children: [
@@ -97,8 +99,6 @@ define([], function () {
                         }
                     ]
                 },
-            ]
-        },
         {
             path: '/contest',
             component: view('default'),
