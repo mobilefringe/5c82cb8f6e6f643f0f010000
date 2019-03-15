@@ -5,31 +5,31 @@ define([], function () {
             component: view('home')
         },
         {
-            path: '/center-information',
+            path: '/contact-us',
             component: view('default'),
+            children: [
+                    {
+                        path: '',
+                        component: view('contact'),
+                        meta: {
+                            breadcrumb: 'Contact Us'
+                        },
+                        name: 'contact'
+                    }
+                ]
+            },
+        // {
+            // path: '/center-information',
+            // component: view('default'),
             // meta: {
             //     breadcrumb: 'Center Information'
             // },
-            children: [
-                {   
-                    path: '',
-                    component: view('center_information'),
-                    name: 'center-info'
-                },
-                {
-                    path: '/contact-us',
-                    component: view('default'),
-                    children: [
-                        {
-                            path: '',
-                            component: view('contact'),
-                            meta: {
-                                breadcrumb: 'Contact Us'
-                            },
-                            name: 'contact'
-                        }
-                    ]
-                },
+            // children: [
+            //     {   
+            //         path: '',
+            //         component: view('center_information'),
+            //         name: 'center-info'
+            //     },
                 // {
                 //     path: '/coupons',
                 //     component: view('default'),
@@ -69,20 +69,20 @@ define([], function () {
                 //         }
                 //     ]
                 // },
-                ]
-            },
+            //     ]
+            // },
         {
-                path: '/leasing',
-                component: view('default'),
-                children: [
-                    {
-                        path: '',
-                        component: view('leasing'),
-                        meta: {
-                            breadcrumb: 'Leasing'
-                        },
-                        name: 'leasing'
-                    }
+            path: '/leasing',
+            component: view('default'),
+            children: [
+                {
+                    path: '',
+                    component: view('leasing'),
+                    meta: {
+                        breadcrumb: 'Leasing'
+                    },
+                    name: 'leasing'
+                }
                 ]
             },
         {
@@ -253,29 +253,29 @@ define([], function () {
                 },
             ]
         },
-        {
-            path: '/posts',
-            component: view('default'),
-            meta: {
-                breadcrumb: 'Blog',
-            },
-            children: [
-                {
-                    path: '',
-                    component: view('posts'),
-                    name: 'posts'
-                },
-                {
-                    path: ':id',
-                    component: view('posts_details'),
-                    meta: {
-                        breadcrumb: 'Blog Details',
-                    },
-                    name: 'postsDetails',
-                    props: true
-                }
-            ]
-        },
+        // {
+        //     path: '/posts',
+        //     component: view('default'),
+        //     meta: {
+        //         breadcrumb: 'Blog',
+        //     },
+        //     children: [
+        //         {
+        //             path: '',
+        //             component: view('posts'),
+        //             name: 'posts'
+        //         },
+        //         {
+        //             path: ':id',
+        //             component: view('posts_details'),
+        //             meta: {
+        //                 breadcrumb: 'Blog Details',
+        //             },
+        //             name: 'postsDetails',
+        //             props: true
+        //         }
+        //     ]
+        // },
         {
             path: '*',
             redirect: '/'
