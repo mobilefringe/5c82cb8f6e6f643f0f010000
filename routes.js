@@ -83,8 +83,8 @@ define([], function () {
                     },
                     name: 'leasing'
                 }
-                ]
-            },
+            ]
+        },
         {
                 path: '/newsletter',
                 component: view('default'),
