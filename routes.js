@@ -69,36 +69,36 @@ define([], function () {
                 //         }
                 //     ]
                 // },
-                {
-                    path: '/leasing',
-                    component: view('default'),
-                    children: [
-                        {
-                            path: '',
-                            component: view('leasing'),
-                            meta: {
-                                breadcrumb: 'Leasing'
-                            },
-                            name: 'leasing'
-                        }
-                    ]
-                },
-            ]
-        },
+                ]
+            },
         {
-                    path: '/newsletter',
-                    component: view('default'),
-                    children: [
-                        {
-                            path: '',
-                            component: view('newsletter'),
-                            meta: {
-                                breadcrumb: 'Newsletter Sign-Up',
-                            },
-                            name: 'newsletter'
-                        }
-                    ]
-                },
+                path: '/leasing',
+                component: view('default'),
+                children: [
+                    {
+                        path: '',
+                        component: view('leasing'),
+                        meta: {
+                            breadcrumb: 'Leasing'
+                        },
+                        name: 'leasing'
+                    }
+                ]
+            },
+        {
+                path: '/newsletter',
+                component: view('default'),
+                children: [
+                    {
+                        path: '',
+                        component: view('newsletter'),
+                        meta: {
+                            breadcrumb: 'Newsletter Sign-Up',
+                        },
+                        name: 'newsletter'
+                    }
+                ]
+            },
         {
             path: '/contest',
             component: view('default'),
