@@ -80,14 +80,14 @@
             },
             created() {
 				this.$store.dispatch("getData", "promotions").then(response => {
-				    var temp_repo = this.findRepoByName('Events Banner').images;
-                    if(temp_repo != null) {
-                        this.pageBanner = temp_repo[0];
-                    } else {
-                        this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c82cb8f6e6f643f0f010000/image/png/1552582149966/landing_default_banner.png"
-                        }
-                    }
+				    // var temp_repo = this.findRepoByName('Events Banner').images;
+        //             if(temp_repo != null) {
+        //                 this.pageBanner = temp_repo[0];
+        //             } else {
+        //                 this.pageBanner = {
+        //                     "image_url": "//codecloud.cdn.speedyrails.net/sites/5c82cb8f6e6f643f0f010000/image/png/1552582149966/landing_default_banner.png"
+        //                 }
+        //             }
                     
 					this.currentPromo = this.findPromoBySlug(this.id);
 					if (this.currentPromo === null || this.currentPromo === undefined) {
