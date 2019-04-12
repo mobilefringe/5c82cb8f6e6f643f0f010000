@@ -247,8 +247,8 @@
                             }
                             storeHours.push(hours);
                         });
-                        console.log(this.storeHours)
                         this.storeHours = _.sortBy(storeHours, function(o) { return o.day_of_week });
+                        console.log(this.storeHours)
                     
                         var vm = this;
                         var temp_promo = [];
