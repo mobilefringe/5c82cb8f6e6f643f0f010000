@@ -222,7 +222,7 @@ define([], function () {
                             path: '',
                             component: view('map'),
                             meta: {
-                                breadcrumb: 'Centre Map',
+                                breadcrumb: 'Center Map',
                             },
                             name: 'map'
                         }
