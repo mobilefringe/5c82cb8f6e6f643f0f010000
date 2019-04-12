@@ -246,8 +246,8 @@
                                 hours.todays_hours = false;
                             }
                             storeHours.push(hours);
-                            console.log(this.storeHours)
                         });
+                        console.log(this.storeHours)
                         this.storeHours = _.sortBy(storeHours, function(o) { return o.day_of_week });
                     
                         var vm = this;
