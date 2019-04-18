@@ -18,59 +18,6 @@ define([], function () {
                 }
             ]
         },
-        // {
-            // path: '/center-information',
-            // component: view('default'),
-            // meta: {
-            //     breadcrumb: 'Center Information'
-            // },
-            // children: [
-            //     {   
-            //         path: '',
-            //         component: view('center_information'),
-            //         name: 'center-info'
-            //     },
-                // {
-                //     path: '/coupons',
-                //     component: view('default'),
-                //     meta: {
-                //         breadcrumb: 'Coupons',
-                //     },
-                //     children: [
-                //         {
-                //             path: '',
-                //             component: view('coupons'),
-                            
-                //             name: 'coupons'
-                //         },
-                //         {
-                //             path: '/coupons/my-basket',
-                //             component: view('default'),
-                //             children: [
-                //                 {
-                //                     path: '',
-                //                     component: view('coupon_basket'),
-                //                     meta: {
-                //                         breadcrumb: 'My Basket',
-                //                     },
-                //                     name: 'couponBasket',
-                //                     props: true
-                //                 }
-                //             ]
-                //         },
-                //         {
-                //             path: ':id',
-                //             component: view('coupons_details'),
-                //             meta: {
-                //                 breadcrumb: 'Coupon Details',
-                //             },
-                //             name: 'couponDetails',
-                //             props: true
-                //         }
-                //     ]
-                // },
-            //     ]
-            // },
         {
             path: '/leasing',
             component: view('default'),
@@ -113,29 +60,29 @@ define([], function () {
                 }
             ]
         },
-        {
-            path: '/events',
-            component: view('default'),
-            meta: {
-                breadcrumb: 'Events',
-            },
-            children: [
+        // {
+        //     path: '/events',
+        //     component: view('default'),
+        //     meta: {
+        //         breadcrumb: 'Events',
+        //     },
+        //     children: [
+        //         {
+        //             path: '',
+        //             component: view('events'),
+        //             name: 'events'
+        //         },
                 {
-                    path: '',
-                    component: view('events'),
-                    name: 'events'
-                },
-                {
-                    path: ':id',
+                    path: '/events/:id',
                     component: view('event_details'),
                     meta: {
                         breadcrumb: 'Event Details',
                     },
                     name: 'eventDetails',
                     props: true
-                }
-            ]
-        },
+                },
+        //     ]
+        // },
         {
             path: '/events-and-promotions',
             component: view('default'),
@@ -253,29 +200,6 @@ define([], function () {
                 },
             ]
         },
-        // {
-        //     path: '/posts',
-        //     component: view('default'),
-        //     meta: {
-        //         breadcrumb: 'Blog',
-        //     },
-        //     children: [
-        //         {
-        //             path: '',
-        //             component: view('posts'),
-        //             name: 'posts'
-        //         },
-        //         {
-        //             path: ':id',
-        //             component: view('posts_details'),
-        //             meta: {
-        //                 breadcrumb: 'Blog Details',
-        //             },
-        //             name: 'postsDetails',
-        //             props: true
-        //         }
-        //     ]
-        // },
         {
             path: '*',
             redirect: '/'
