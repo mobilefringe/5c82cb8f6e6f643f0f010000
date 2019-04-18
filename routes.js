@@ -60,29 +60,15 @@ define([], function () {
                 }
             ]
         },
-        // {
-        //     path: '/events',
-        //     component: view('default'),
-        //     meta: {
-        //         breadcrumb: 'Events',
-        //     },
-        //     children: [
-        //         {
-        //             path: '',
-        //             component: view('events'),
-        //             name: 'events'
-        //         },
-                {
-                    path: '/events/:id',
-                    component: view('event_details'),
-                    meta: {
-                        breadcrumb: 'Event Details',
-                    },
-                    name: 'eventDetails',
-                    props: true
-                },
-        //     ]
-        // },
+        {
+            path: '/events/:id',
+            component: view('event_details'),
+            meta: {
+                breadcrumb: 'Event Details',
+            },
+            name: 'eventDetails',
+            props: true
+        },
         {
             path: '/events-and-promotions',
             component: view('default'),
