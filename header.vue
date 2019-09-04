@@ -61,7 +61,7 @@
                                             </div>
         							    </li>
         					        </ul>
-        					       <div class="mobile_social_icon_container">
+        					        <div class="mobile_social_icon_container">
         					            <p class="social_title">Follow Us on Social Media</p>
                 					    <span class="social_icon" v-for="item in social_media">
                                             <a :href="item.url" target="_blank">
