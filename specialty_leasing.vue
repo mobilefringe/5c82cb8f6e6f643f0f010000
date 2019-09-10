@@ -33,10 +33,10 @@
                             <div class="leasing_contact" v-if="leasingInfo" v-html="leasingInfo.body"></div>
                         </div>
                     </div>
-                    <div class="location_image_container">
-                        <div class="location_image" v-if="pageImages" v-for="item in pageImages">
-                            <img :src="item.image_url" alt="" />   
-                        </div>
+                </div>
+                <div class="location_image_container">
+                    <div class="location_image" v-if="pageImages" v-for="item in pageImages">
+                        <img :src="item.image_url" alt="" />   
                     </div>
                 </div>
             </div>
