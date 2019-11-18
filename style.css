@@ -1855,7 +1855,7 @@ $anim-speed: 0.3s;
 }
 .store_details_title {
     margin-bottom: 20px;
-    color: $primary;
+    color: $secondary;
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
