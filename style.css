@@ -1363,6 +1363,11 @@ $anim-speed: 0.3s;
         }
     }
 }
+
+.v-select .spinner {
+    font-size: 2rem;    
+}
+
 .store_list_title {
     margin-top: 0;
 }
