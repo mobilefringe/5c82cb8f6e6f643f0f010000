@@ -1364,10 +1364,6 @@ $anim-speed: 0.3s;
     }
 }
 
-.v-select .spinner {
-    font-size: 2rem !important;    
-}
-
 .store_list_title {
     margin-top: 0;
 }
@@ -1434,6 +1430,10 @@ $anim-speed: 0.3s;
     &:hover {
         text-decoration: underline;
     }
+}
+
+.v-select .spinner {
+    font-size: 2rem !important;    
 }
 
 /* *** NEWSLETTER *** */
