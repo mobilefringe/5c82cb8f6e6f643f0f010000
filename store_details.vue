@@ -237,9 +237,7 @@
                         } else {
                             this.currentStore.no_logo = false
                         }
-                        // if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                        //     this.currentStore.store_front_url_abs = this.property.default_logo;
-                        // }
+                    
                         
                         var vm = this;
                         var storeHours = [];
@@ -255,6 +253,29 @@
                         });
                         this.storeHours = _.sortBy(storeHours, function(o) { return o.day_of_week });
                         console.log(this.storeHours)
+                        
+                        // DELIVERY
+                        var delivery_category = 5495;
+                        var categories = this.currentStore.categories;
+                        var subcategories = this.currentStore.subcategories;
+                        if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
+                            this.deliveryAvailable = true;
+                            if (_.includes(subcategories, 7763)) {
+                                this.hasUberEats = true;
+                            }
+                            if (_.includes(subcategories, 8279)) {
+                                this.hasDoordash = true;
+                            }
+                            if (_.includes(subcategories, 8280)) {
+                                this.hasGrubhub = true;
+                            }
+                            if (_.includes(subcategories, 8281)) {
+                                this.hasPostmates = true;   
+                            }
+                            if (_.includes(subcategories, 8282)) {
+                                this.hasRestaurantDelivery = true;   
+                            }
+                        }
                     
                         var vm = this;
                         var temp_promo = [];
