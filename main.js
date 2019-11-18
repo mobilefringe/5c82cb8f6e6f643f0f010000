@@ -207,7 +207,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
             loadData: async function() {
                 try{
                     // await this.$store.dispatch('initializeApi', { site: "landing", version: "v4" });
-                    await this.$store.dispatch('initializeApi', { site: "bramaleacitycenter", version: "v4" });
+                    await this.$store.dispatch('initializeApi', { site: "bramaleacitycentre", version: "v4" });
                     
                     
                     await Promise.all([this.$store.dispatch("getData", "property")]);
