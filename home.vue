@@ -214,8 +214,6 @@
                         }
                     });
                     
-                    console.log(this.property)
-                    
                     return banners
                 },
                 featuredItems() {
