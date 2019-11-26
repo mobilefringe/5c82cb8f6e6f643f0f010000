@@ -507,7 +507,7 @@ img{
 .message_content {
     h1 {
         margin-bottom: 44px;
-        color: $primary;
+        color: $secondary;
         text-transform: uppercase;
     }
     p {
