@@ -16,21 +16,21 @@
                             <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/qtttjt/" method="post">
                                 <div class="row">
                                     <div class="col-sm-6" >
-                                        <label for="fieldglrtiu" class="accessibility">First Name</label>
+                                        <label for="fieldglrtiu" class="visuallyhidden">First Name</label>
                                         <input v-model="form_data.first_name" required class="margin_20 form-control" id="fieldglrtiu" name="cm-f-glrtiu" type="text" placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6" >
-                                        <label for="fieldglrtdl" class="accessibility">Last Name</label>
+                                        <label for="fieldglrtdl" class="visuallyhidden">Last Name</label>
                                         <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldglrtdl" name="cm-f-glrtdl" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <label for="newsletter_email" class="accessibility">Email</label>
+                                        <label for="newsletter_email" class="visuallyhidden">Email</label>
                                         <input v-model="form_data.email" required class="margin_20 form-control" name="cm-qtttjt-qtttjt" type="email" placeholder="Email" id="newsletter_email">
                                     </div>
                                     <!--<div class="col-sm-6">-->
-                                    <!--    <label for="fieldglrtdr" class="accessibility">Phone Number</label>-->
+                                    <!--    <label for="fieldglrtdr" class="visuallyhidden">Phone Number</label>-->
                                     <!--    <input id="fieldglrtdr" v-model="form_data.phone" required class="margin_20 form-control" name="cm-f-glrtdr" type="text" placeholder="Phone Number" />-->
                                     <!--</div>-->
                                 </div>
