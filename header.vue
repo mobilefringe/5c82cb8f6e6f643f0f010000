@@ -27,21 +27,43 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <nav id="primary_nav">
+         <!--               <nav id="primary_nav">-->
+    					<!--	<ul>-->
+    					<!--	    <li class="menu_item" v-for="item in menu_items" :id="item.id">-->
+    					<!--	        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>-->
+    					<!--	        <span tabindex=0 v-if="item.sub_menu != undefined">{{ item.name }}</span>-->
+    					<!--	        <ul v-if="item.sub_menu" class="subdropdown">-->
+    					<!--	            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">-->
+    					<!--	                <router-link :to="sub_menu.href">-->
+						   <!--                     <p>{{ sub_menu.name }}</p>-->
+					    <!--                    </router-link>-->
+    					<!--	            </li>-->
+    					<!--			</ul>-->
+    					<!--	    </li>-->
+    					<!--	</ul>-->
+    					<!--</nav>-->
+    					
+    					
+    					<nav id="primary_nav">
     						<ul>
-    						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
+    						    <li class="menu_item" v-for="item in menu_items" :id="item.id" @mouseleave="showDropDown = false" @mouseover="showDropDown = true">
     						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>
-    						        <span tabindex=0 v-if="item.sub_menu != undefined">{{ item.name }}</span>
-    						        <ul v-if="item.sub_menu" class="subdropdown">
-    						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
-    						                <router-link :to="sub_menu.href">
-						                        <p>{{ sub_menu.name }}</p>
-					                        </router-link>
+    						        <span tabindex=0  @click="showDropDown = !showDropDown" v-if="item.sub_menu != undefined">{{ item.name }}</span>
+    						        <ul v-show="showDropDown" v-if="item.sub_menu" class="subdropdown">
+    						            <li @click="showDropDown = !showDropDown" v-for="sub_menu in item.sub_menu" class="dropdown_item">
+    						                <a v-if="sub_menu.target" :href="sub_menu.href" target="_blank" aria-label="Open The Landing at Renton's Non-Profit Donation Request PDF Form.">
+    						                    <p>{{ sub_menu.name }}</p>
+						                    </a>
+    						                <router-link v-else :to="sub_menu.href">
+                                                <p>{{ sub_menu.name }}</p>
+                                            </router-link>
     						            </li>
     								</ul>
     						    </li>
     						</ul>
     					</nav>
+    					
+    					
     					<div class="nav_container visible_phone">
     					    <transition name="custom-classes-transition" enter-active-class="animated slideInRight" leave-active-class="animated slideOutRight">
         					    <nav id="mobile_nav" v-show="showMenu" class="">
