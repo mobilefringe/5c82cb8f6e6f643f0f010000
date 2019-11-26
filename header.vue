@@ -29,7 +29,7 @@
                     <div class="col-md-12">
     					<nav id="primary_nav">
     						<ul>
-    						    <li class="menu_item" v-for="item in menu_items" :id="item.id" @mouseleave="showDropDown = false" @mouseover="showDropDown = true">
+    						    <li class="menu_item" v-for="item in menu_items" :id="item.id" @mouseleave="showDropDown = false" @mouseover="showDropDown = true" v-on:focus="showDropDown = true">
     						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>
     						        <span tabindex=0  @click="showDropDown = !showDropDown" v-if="item.sub_menu != undefined">{{ item.name }}</span>
     						        <ul v-show="showDropDown" v-if="item.sub_menu" class="subdropdown">
