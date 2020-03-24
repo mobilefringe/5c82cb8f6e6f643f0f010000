@@ -81,7 +81,7 @@
             created() {
 				this.$store.dispatch("getData", "promotions").then(response => {
 				    var temp_repo = this.findRepoByName('Events Banner').images;
-                    if(temp_repo != null) {
+                    if (temp_repo != null) {
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
@@ -92,8 +92,7 @@
 					this.currentPromo = this.findPromoBySlug(this.id);
 					if (this.currentPromo === null || this.currentPromo === undefined) {
 						this.$router.replace({ path: '/promotions' });
-					}
-					else {
+					} else {
 					    if (this.currentPromo.promotionable_type === "Store"){
                             if  (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
                                 this.currentPromo.image_url = this.currentPromo.store.store_front_url_abs; 
@@ -104,7 +103,7 @@
                             }
                         }
 					}
-				// 	this.$breadcrumbs[2].meta.breadcrumb = this.currentPromo.name
+					this.$breadcrumbs[1].meta.breadcrumb = this.currentPromo.name
 					this.dataLoaded = true;
 				}, error => {
 					console.error("Could not retrieve data from server. Please check internet connection and try again.");
