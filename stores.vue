@@ -126,26 +126,16 @@
             created (){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Directory Banner');
-                    if(temp_repo !== null && temp_repo !== undefined) {
+                    if (temp_repo !== null && temp_repo !== undefined) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5d6fe3996e6f647c7f000000/image/png/1552582149966/landing_default_banner.png"
                         }
                     }
                     
                     this.dataLoaded = true;
-                    
-                    this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
-                      this.filterByCategory;
-                    } else {
-                        this.selectedCat = "All";
-                        this.filteredStores = this.allStores;
-                    }
                 });
             },
             watch: {
@@ -201,6 +191,33 @@
                             } else {
                               value.no_store_logo = false;
                             }
+                            
+                            // Create list of custom store tags
+                            var flags = [];
+                            if (value.tags) {
+                                var store_tags = value.tags;
+                                _.forEach(store_tags, function(tag, key) {
+                                    flags.push(tag);
+                                });
+                            }
+                            if (value.is_new_store) {
+                                flags.push("New");
+                            } else if (value.is_coming_soon_store) {
+                                flags.push("Coming Soon");
+                            } else if (value.is_relocated_store) {
+                                flags.push("Relocated");
+                            } else if (value.total_published_promos) {
+                                flags.push("Promotion");
+                            } else if (value.total_published_events) {
+                                flags.push("Event");
+                            } else if (value.total_published_jobs) {
+                                flags.push("Job");
+                            }
+                            if (flags.length > 3) {
+                                flags = _.slice(flags, 0, 3);
+                            }
+                            value.store_flags = flags;
+                            
                             store_list.push(value);
                         }
                     });
