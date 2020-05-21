@@ -1694,12 +1694,12 @@ $anim-speed: 0.3s;
     .store_tag {
         position: absolute;
         right: -1px;
-        background-color: $primary;
+        background-color: #000;
         .store_tag_text {
             padding: 3px 6px;
             max-width: 108px;
             font-size: 0.6875rem;
-            color: #000;
+            color: #FFF;
             line-height: normal;
             letter-spacing: 0.6px;
             text-transform: uppercase;
