@@ -1694,7 +1694,7 @@ $anim-speed: 0.3s;
     .store_tag {
         position: absolute;
         right: -1px;
-        background-color: #000;
+        background-color: $secondary;
         .store_tag_text {
             padding: 3px 6px;
             max-width: 108px;
